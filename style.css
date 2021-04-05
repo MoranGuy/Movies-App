@@ -168,6 +168,7 @@ footer {
 }
 
 .btn-prev {
+  background-color: rgb(239, 239, 239);
   border: 2px solid #000;
   border-radius: 5px;
   font-weight: bold;
@@ -196,6 +197,7 @@ footer {
 }
 
 .btn-next {
+  background-color: rgb(239, 239, 239);
   border: 2px solid #000;
   border-radius: 5px;
   font-weight: bold;
