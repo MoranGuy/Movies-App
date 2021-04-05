@@ -134,7 +134,8 @@ footer {
 }
 
 .btn {
-  border: 1px solid #000;
+  background-color: rgb(239, 239, 239);
+  border: 2px solid #000;
   border-radius: 5px;
   font-weight: bold;
   display: flex;
@@ -167,7 +168,7 @@ footer {
 }
 
 .btn-prev {
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: 5px;
   font-weight: bold;
   display: flex;
@@ -195,7 +196,7 @@ footer {
 }
 
 .btn-next {
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: 5px;
   font-weight: bold;
   display: flex;
@@ -299,9 +300,8 @@ footer {
   color: rgb(121, 121, 121);
 }
 
-.genres-duration {
-  display: flex;
-  align-items: center;
+.genres {
+  margin-bottom: 5px;
 }
 
 .fas.fa-circle {

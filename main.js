@@ -54,7 +54,11 @@ function showMovies(movies) {
           alt="${title}" height="450px"
         />
         <div class="movie-info">
-          <h3>${title}</h3>
+          ${
+            title.length > 50
+              ? `<h3>${title.substr(0, 47)}...</h3>`
+              : `<h3>${title}</h3>`
+          }
           <span class="${getClassByRate(vote_average)}">${vote_average}</span>
         </div>
         <div class="overview">
@@ -105,10 +109,11 @@ function showMovies(movies) {
         <div class="description">
           <h1 class="title">${title} (${parseInt(release_date)})</h1>
         <h2 class="tagline">${tagline}</h2>
-          <p class="genres-duration">
-            ${genresList(genre_ids)} <i class="fas fa-circle"></i> ${getRuntime(
-            runtime
-          )}
+          <p class="genres">
+            ${genresList(genre_ids)}
+            </p>
+            <p class="duration">
+            ${getRuntime(runtime)}
           </p>
           <div class="rating-container"><h2 class="rating ${getClassByRate(
             vote_average
